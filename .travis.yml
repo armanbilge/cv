@@ -1,9 +1,9 @@
 language: objective-c # So that we get OS X build environment
-before_install:
+install:
   - brew update
   - brew install caskroom/cask/brew-cask
+  - travis_wait mvn install
   - brew cask install mactex &> /dev/null
-install: travis_wait mvn install
 script: rake
 before_deploy:
   - mdkir cv
