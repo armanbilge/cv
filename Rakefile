@@ -1,9 +1,7 @@
 require 'rake/clean'
 
-CLEAN.include '*'
-CLEAN.exclude 'Rakefile'
-CLEAN.exclude 'cv.tex'
-CLEAN.exclude 'cv.pdf'
+CLEAN.include 'cv.aux'
+CLEAN.include 'cv.log'
 CLOBBER.add 'cv.pdf'
 
 task :default => 'cv.pdf'
