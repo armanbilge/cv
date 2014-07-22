@@ -5,6 +5,7 @@ install:
   - while true; do sleep 300; echo x; done &
   - brew cask install mactex > /dev/null
   - kill $!
+  - reset
 script: rake
 before_deploy:
   - mdkir cv
