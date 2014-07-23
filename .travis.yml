@@ -13,10 +13,10 @@ before_deploy:
   - mv cv.pdf cv/cv.pdf
 deploy:
   provider: s3
-  access_key_id: AKIAJ4HSUQVUNZNKFJDQ
+  access_key_id: AKIAIJMV4J6YK3H2JPTA
   secret_access_key:
     secure:
-      hfgolkUogmvk12/sOidz5nS1jw2AIB+3YGRLfKQ2DmJjg/urXPllI3G3x7uXuSlu2GV3VIibj6jbnKVpXRk3JsHfa2n8c++gKSN/Wad6BTQh/IlAJ/is7U4gtvHYXY6VOduAZex82cyuEbfxH+QnModkSTqWdxRRMfilFW7rLw8=
+      b6QtZ14yQJKUNGZcrkfR84wRx0uHWK62Zwhn2NTiMDC1hWRCrTK1Vprr3MSpAiRLtuCx5DWhNYxCFGzDKElqp2rZb8utH7QReNBaLfJj2FQoM4+tZjeowg5opSt9kG7wDsaoPjeM2IiOSkhSB8/SDdxACPST/MAoXcxZ1uuyaXM=
   bucket: build.compevol.org
   local-dir: cv
   upload-dir: cv
