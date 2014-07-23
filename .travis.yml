@@ -1,6 +1,5 @@
 language: objective-c # So that we get OS X build environment
 install:
-  - brew update
   - brew install caskroom/cask/brew-cask
   - while true; do sleep 300; echo x; done &
   - brew cask install mactex > /dev/null
