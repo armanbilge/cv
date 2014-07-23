@@ -7,6 +7,7 @@ install:
   - kill $!
   - PATH=/usr/texbin/:$PATH
   - export PATH
+  - tlmgr update --self --all
 script: rake
 before_deploy:
   - mkdir cv
