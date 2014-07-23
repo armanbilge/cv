@@ -9,7 +9,7 @@ install:
   - export PATH
 script: rake
 before_deploy:
-  - mdkir cv
+  - mkdir cv
   - mv cv.pdf cv/cv.pdf
 deploy:
   provider: s3
