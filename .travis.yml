@@ -1,13 +1,11 @@
-language: objective-c # So that we get OS X build environment
 install:
-  - brew install caskroom/cask/brew-cask
-  - while true; do sleep 300; echo x; done &
-  - brew cask install mactex > /dev/null
-  - kill $!
-  - PATH=/usr/texbin/:$PATH
-  - while true; do sleep 300; echo x; done &
-  - sudo tlmgr update --self --all > /dev/null
-  - kill $!
+  - wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+  - tar -zxvf install-tl-unx.tar.gz
+  - cd install-tl-*
+  - touch profile
+  - ./install-tl --profile=profile
+  - cd ..
+  - PATH=/usr/local/texlive/2014/bin/i386-linux:$PATH; export PATH
 script: rake
 before_deploy:
   - mkdir cv
