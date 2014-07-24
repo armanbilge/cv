@@ -3,9 +3,9 @@ install:
   - tar -zxvf install-tl-unx.tar.gz
   - cd install-tl-*
   - touch profile
-  - ./install-tl --profile=profile
+  - sudo ./install-tl --profile=profile
   - cd ..
-  - PATH=/usr/local/texlive/2014/bin/i386-linux:$PATH; export PATH
+  - PATH=/usr/local/texlive/2014/bin/i386-linux:$PATH
 script: rake
 before_deploy:
   - mkdir cv
