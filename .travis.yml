@@ -5,9 +5,9 @@ install:
   - brew cask install mactex > /dev/null
   - kill $!
   - PATH=/usr/texbin/:$PATH
-  - while true; do sleep 300; echo x; done &
-  - sudo tlmgr update --self --all > /dev/null
-  - kill $!
+# - while true; do sleep 300; echo x; done &
+# - sudo tlmgr update --self --all > /dev/null
+# - kill $!
 script: rake
 before_deploy:
   - mkdir cv
