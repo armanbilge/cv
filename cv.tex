@@ -1,161 +1,49 @@
-\documentclass[11pt,letterpaper]{article}
-
+\documentclass[11pt]{tracv}
 \usepackage[margin=2cm]{geometry}
-
-\usepackage[parfill]{parskip}
-\usepackage{changepage}
-\usepackage{hanging}
-\usepackage{nicefrac}
-
-\usepackage{fancyhdr}
-\pagestyle{fancy}
-\lhead{\textsc{Arman D. Bilge}}
-\chead{C.V.}
-\rhead{\thepage}
-\cfoot{}
-
 \frenchspacing
+
+\name{Arman D. Bilge}
+\address{Room 376, Building 303S \\ Department of Computer Science}{The University of Auckland}{Private Bag 92019}{Auckland 1142, New Zealand}
+\phone{+64 9 373 7599 ext. 87458}
+\email{arman@armanbilge.com}
+\website{www.armanbilge.com}
 
 \begin{document}
 
-\thispagestyle{empty}
-
 \null
-%\vspace{-0.5in}
 
-\centering
-\Large \textsc{Curriculum Vitae}
+\head
 
-\vspace{0.5\baselineskip}
+\begin{columnsection}{Education}
+    \columnentry{B.Sc. in Computer Science}{The University of Auckland}{March 2014--November 2016 (expected)}{Auckland, New Zealand}{}{}{}
+\end{columnsection}
 
-\begin{flushleft}
+\begin{columnsection}{Research Experience}
 
-\LARGE \textbf{Arman D. Bilge} \hfill \normalsize \\
-Room 376, Building 303S \\
-Department of Computer Science \\
-The University of Auckland \hfill +64 9 373 7599 ext. 87458 \\
-Private Bag 92019 \hfill \texttt{arman@armanbilge.com} \\
-Auckland 1142, New Zealand \hfill \texttt{www.armanbilge.com} \\
+	  \columnentry{Undergraduate Researcher}{The University of Auckland}{Computational Evolution Group}{Auckland, New Zealand}{Department of Computer Science}{March 2014--Present}{}
+	  
+	  \columnentry{High School Intern}{Massachusetts Institute of Technology}{Computational Biology Group}{Cambridge, Massachusetts}{Computer Science and Artificial Intelligence Laboratory}{March 2013--February 2014}{}
+	  
+	  \columnentry{High School Intern}{Harvard University}{Girguis Laboratory}{Cambridge, Massachusetts}{Department of Organismic and Evolutionary Biology}{January 2013--February 2014}{}
+	  
+\end{columnsection}
 
-\hfill \\
+\begin{columnsection}{Teaching Experience}
 
-%\LARGE \textsc{Research Interests} \\ \vspace{11pt} \hrule \normalsize \vspace{0.5\baselineskip}
-%
-%\begin{itemize}
-%\item Application of phylogenetic analysis to 
-%\item Bayesian MCMC methods for phylogenetic inference
-%\item Lentiviral evolution, particularly recombination, host shifts, and
-%\item Developing a phylogenetic framework for coevolutionary processes at ecological and molecular levels.
-%\end{itemize}
+    \columnentry{Instructor}{Lexington High School}{Phylogenetics/Computational Biology Club}{Lexington, Massachusetts}{Science and Mathematics Departments}{October 2012--February 2014}{}
 
-\LARGE \textsc{Education} \\ \vspace{11pt} \hrule \normalsize \vspace{0.5\baselineskip}
+\end{columnsection}
 
-\begin{adjustwidth}{1em}{1em}
-\textbf{B.Sc. in Computer Science} \hfill \textbf{\emph{The University of Auckland}} \\
-March 2014--November 2016 (expected) \hfill Auckland, New Zealand
-\end{adjustwidth}
+\begin{hangingsection}{Presentations}
 
-\LARGE \textsc{Research Experience} \\ \vspace{11pt} \hrule \normalsize \vspace{0.5\baselineskip}
+        \hangingentry \textbf{Bilge, A. D.} (July 2012). Investigating evolution via computational biology: The application of phylogenetic analyses to epidemiology and ecology. \emph{XSEDE12}, Chicago, IL. Invited; received NSF funding for travel and lodging.
 
-\begin{adjustwidth}{1em}{1em}
+\end{hangingsection}
 
-\textbf{Undergraduate Researcher} \hfill \textbf{\emph{The University of Auckland}} \\
-Computational Evolution Group \hfill Auckland, New Zealand \\
-Department of Computer Science \hfill March 2014--Present
+\begin{hangingsection}{Honors and Awards}
 
-\textbf{High School Intern} \hfill \textbf{\emph{Massachusetts Institute of Technology}} \\
-Computational Biology Group \hfill Cambridge, MA \\
-Computer Science and Artificial Intelligence Laboratory \hfill March 2013--February 2014
-%\emph{Developing an algorithm for Bayesian inference of coevolutionary\\histories that incorporates temporal and geographical data.}
-
-\textbf{High School Intern} \hfill \textbf{\emph{Harvard University}} \\
-Girguis Laboratory \hfill Cambridge, MA \\
-Department of Organismic and Evolutionary Biology \hfill January 2013--February 2014 \\
-%\emph{Analyzing the (meta)-genomes of \emph{Alviniconcha spp.} and \emph{Riftia pachyptila}.}
-
-\end{adjustwidth}
-
-\LARGE \textsc{Teaching Experience} \\ \vspace{11pt} \hrule \normalsize \vspace{0.5\baselineskip}
-
-\begin{adjustwidth}{1em}{1em}
-
-%\textbf{Peer Tutor} \hfill \textbf{\emph{Lexington High School}} \\
-%Learning Center \hfill Lexington, MA \\
-%\emph{Providing students with extra help for assignments from math,} \hfill February 2013--Present \\
-%\emph{science, and humanities courses.}
-
-\textbf{Instructor} \hfill \textbf{\emph{Lexington High School}} \\
-Phylogenetics/Computational Biology Club \hfill Lexington, MA \\
-Science and Mathematics Departments \hfill October 2012--February 2014 
-%\emph{Helped prepare instructional materials and advise students\\using computational biology methods in their science fair projects.}
-
-%\textbf{Teaching Assistant} \hfill \textbf{\emph{Lexington Community Education}} \\
-%Chamber Music Camp \hfill Lexington, MA \\
-%Lexplorations \hfill Summers 2011--2013 \\
-%\emph{Coached middle school students }
-
-\end{adjustwidth}
-
-%\LARGE \textsc{Professional Experience} \\ \vspace{11pt} \hrule \normalsize \vspace{0.5\baselineskip}
-%
-%\begin{adjustwidth}{1em}{1em}
-%
-%\textbf{Photography Club} \hfill \textbf{\emph{Lexington High School}} \\
-%\hfill Lexington, MA \\
-%\hspace{1em}\textbf{Founder and President} \hfill October 2011--Present \\
-%\emph{Did photography.}
-%
-%\textbf{The Musket} \hfill \textbf{\emph{Lexington High School}} \\
-%School Newspaper \hfill Lexington, MA \\
-%\hspace{1em}\textbf{Co--Editor-in-Chief} \hfill September 2013--Present \\
-%\hspace{1em}\textbf{Photo Editor} \hfill September 2011--May 2013 \\
-%\hspace{1em}\textbf{Photographer} \hfill October 2010--May 2011 \\
-%\emph{Managed an editorial board and staff and oversaw\\production of an 8-page, 5\,\nicefrac{1}{2}-issue newspaper.}
-%
-%\end{adjustwidth}
-
-%\LARGE \textsc{Publications} \\ \vspace{11pt} \hrule \normalsize \vspace{0.5\baselineskip}
-%
-%\begin{hangparas}{3em}{1}
-%\hspace{1em}\textbf{Bilge, A. D.}, Chan, E. H., and Offner, S. (2013). Preliminary phylogenetic evidence for coevolution in a specialized, obligate pollination mutualism. \emph{Journal of Emerging Investigators}. Submitted. %\texttt{http://emerginginvestigators.org/}
-%\end{hangparas}
-
-\LARGE \textsc{Presentations} \\ \vspace{11pt} \hrule \normalsize \vspace{0.5\baselineskip}
-
-\begin{hangparas}{3em}{1}
-
-%\hspace{1em}\textbf{Bilge, A. D.} (Oct. 2012). Investigating evolution via computational biology: The application of phylogenetic analyses to epidemiology and ecology. \emph{Massachusetts Junior Academy of Science 2012 Fall Symposium}, Cambridge, MA. Invited.
-
-\hspace{1em}\textbf{Bilge, A. D.} (July 2012). Investigating evolution via computational biology: The application of phylogenetic analyses to epidemiology and ecology. \emph{XSEDE12}, Chicago, IL. Invited; received NSF funding for travel and lodging.
-\end{hangparas}
-
-\LARGE \textsc{Honors and Awards} \\ \vspace{11pt} \hrule \normalsize \vspace{0.5\baselineskip}
-
-\begin{hangparas}{3em}{1}
-
-\hspace{1em}\textbf{\$50,000 Scholarship Individual Winner}, Siemens Competition in Math, Science and Technology~(December 2013).
-
-%\hspace{1em}\textbf{Junior String Award}, Lexington Symphony (2013).
-
-%\hspace{1em}\textbf{Junior Book Award}, Williams College (2013).
-
-%\hspace{1em}\textbf{Member}, The Lexington High School Chapter of the National Honor Society (2013).
-
-%\hspace{1em}\textbf{Class Achievement Award}, Lexington High School World Language Awards (2013). For outstanding work in Spanish.
-
-%\hspace{1em}\textbf{Second Place}, \emph{Massachusetts State Science and Engineering Fair} (2013). HIV: Just the tip of an iceberg: The evolutionary history of SIV.
-
-%\hspace{1em}\textbf{First Place}, \emph{Massachusetts State Science and Engineering Fair} (2012). The origins and spread of HIV-1 subtype B in the Americas.
-
-%\hspace{1em}\textbf{Third Place}, Young Garden Photographer of the Year, International Garden Photographer of the Year (2011).
-
-%\hspace{1em}\textbf{Erd\H{o}s number: 4}
-
-\end{hangparas}
-
-\end{flushleft}
-
-%Featured on the front page of the National Science Foundation's website
-
+		\hangingentry \textbf{\$50,000 Scholarship Individual Winner}, Siemens Competition in Math, Science and Technology~(December 2013).
+		
+\end{hangingsection}
 
 \end{document}
