@@ -63,13 +63,18 @@
     \hfill \\
 }
 
-\newenvironment{columnsection}[1]{
-    \LARGE
-    \textsc{#1} \\
-    \vspace{\mytextsize}
-    \hrule
-    \normalsize
+\renewcommand{\section}[1]{
+    {
+        \LARGE
+        \textsc{#1} \\
+        \vspace{\mytextsize}
+        \hrule
+    }
     \vspace{0.5\baselineskip}
+}
+
+\newenvironment{columnsection}[1]{
+    \section{#1}
     \begin{adjustwidth}{1em}{1em}
 }{
     \end{adjustwidth}
@@ -84,16 +89,12 @@
             \\ #7
         \fi
     \fi
-    
+
+% ^ Blank line necessary to avoid a small whitespace
 }
 
 \newenvironment{hangingsection}[1]{
-    \LARGE
-    \textsc{#1} \\
-    \vspace{\mytextsize}
-    \hrule
-    \normalsize
-    \vspace{0.5\baselineskip}
+    \section{#1}
     \begin{adjustwidth}{3em}{1em}
 }{
     \end{adjustwidth}
