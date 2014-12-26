@@ -1,3 +1,20 @@
+%% tracv.cls
+%% Copyright 2014 Arman Bilge <armanbilge@gmail.com>
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License, either version 1.3
+% of this license or (at your option) any later version.
+% The latest version of this license is in
+%   http://www.latex-project.org/lppl.txt
+% and version 1.3 or later is part of all distributions of LaTeX
+% version 2005/12/01 or later.
+%
+% This work has the LPPL maintenance status `maintained'.
+%
+% The Current Maintainer of this work is Arman Bilge <armanbilge@gmail.com>.
+%
+% This work consists of the file tracv.cls.
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{tracv}[2014/08/17 v0.1 Style derived from Tracy Heath's CV]
 
@@ -48,18 +65,18 @@
 \newcommand{\head}{
 
     \thispagestyle{empty}
-    
+
     \centering
     \Large \textsc{Curriculum Vitae}
     \vspace{0.5\baselineskip}
-    
+
     \raggedright
     \LARGE \textbf{\namea} \hfill \normalsize \\
     \addressa \\
     \addressb \hfill \phonea \\
     \addressc \hfill \emaila \\
     \addressd \hfill \websitea \\
-    
+
     \hfill \\
 }
 
