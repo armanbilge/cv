@@ -29,10 +29,11 @@
 
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
-\lhead{\textsc{\authora}}
+\lhead{\textsc{\namea}}
 \chead{C.V.}
 \rhead{\thepage}
 \cfoot{}
+\newcommand{\resetHeadWidth}{\fancy@setoffs}
 
 \newlength{\mytextsize}
 \makeatletter
@@ -64,6 +65,7 @@
 
 \newcommand{\head}{
 
+    \resetHeadWidth
     \thispagestyle{empty}
 
     \centering
@@ -119,4 +121,8 @@
 
 \newcommand{\hangingentry}{
     \hspace{-2em}
+}
+
+\newcommand{\datedhangingentry}[2]{
+    \hspace{-2em} #2 \hfill #1
 }
