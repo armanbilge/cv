@@ -16,7 +16,7 @@
 % This work consists of the file tracv.cls.
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{tracv}[2014/08/17 v0.1 Style derived from Tracy Heath's CV]
+\ProvidesClass{tracv}[2015/06/08 v0.2 Style derived from Tracy Heath's CV]
 
 \ProcessOptions\relax
 
@@ -100,12 +100,17 @@
 }
 
 \newcommand{\columnentry}[7]{
-    \textbf{#1} \hfill \textbf{\emph{#2}} \\
-    #3 \hfill #4
-    \ifx&#5&\else
-        \\ #5 \hfill #6
-        \ifx&#7&\else
-            \\ #7
+
+    \ifx&#3&%
+        #1 \hfill #2 \vspace{-0.5\mytextsize}
+    \else
+        \textbf{#1} \hfill \textbf{\emph{#2}} \\
+        #3 \hfill #4
+        \ifx&#5&\else
+            \\ #5 \hfill #6
+            \ifx&#7&\else
+                \\ #7
+            \fi
         \fi
     \fi
 
