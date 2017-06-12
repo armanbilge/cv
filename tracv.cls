@@ -1,5 +1,5 @@
 %% tracv.cls
-%% Copyright 2014 Arman Bilge <armanbilge@gmail.com>
+%% Copyright 2017 Arman Bilge <armanbilge@gmail.com>
 %
 % This work may be distributed and/or modified under the
 % conditions of the LaTeX Project Public License, either version 1.3
@@ -16,7 +16,7 @@
 % This work consists of the file tracv.cls.
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{tracv}[2015/06/08 v0.2 Style derived from Tracy Heath's CV]
+\ProvidesClass{tracv}[2017/06/12 v0.3 Style derived from Tracy Heath's CV]
 
 \ProcessOptions\relax
 
@@ -35,10 +35,14 @@
 \cfoot{}
 \newcommand{\resetHeadWidth}{\fancy@setoffs}
 
+\RequirePackage{hyperref}
+
 \newlength{\mytextsize}
 \makeatletter
   \setlength{\mytextsize}{\f@size pt}
 \makeatother
+
+\newcommand{\myurl}[1]{\href{http://#1}{\texttt{#1}}}
 
 \newcommand{\name}[1]{
     \newcommand{\namea}{#1}
@@ -52,11 +56,15 @@
 }
 
 \newcommand{\email}[1]{
-    \newcommand{\emaila}{\texttt{#1}}
+    \newcommand{\emaila}{\href{mailto:#1}{\texttt{#1}}}
 }
 
 \newcommand{\website}[1]{
-    \newcommand{\websitea}{\texttt{#1}}
+    \newcommand{\websitea}{\myurl{#1}}
+}
+
+\newcommand{\account}[1]{
+    \newcommand{\accounta}{\texttt{#1}}
 }
 
 \newcommand{\phone}[1]{
@@ -74,10 +82,10 @@
 
     \raggedright
     \LARGE \textbf{\namea} \hfill \normalsize \\
-    \addressa \\
-    \addressb \hfill \phonea \\
-    \addressc \hfill \emaila \\
-    \addressd \hfill \websitea \\
+    \addressa \hfill \phonea \\
+    \addressb \hfill \emaila \\
+    \addressc \hfill \websitea \\
+    \addressd \hfill \accounta \\
 
     \hfill \\
 }
